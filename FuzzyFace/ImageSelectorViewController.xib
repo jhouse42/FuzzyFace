@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageSelectorViewController" customModule="FuzzyFace" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="8qd-dh-dH3" id="QX4-zc-tKL"/>
+                <outlet property="libraryButton" destination="TXr-wE-ZGr" id="DJe-eA-T5f"/>
+                <outlet property="view" destination="ZVC-5m-4Ew" id="CrO-yD-lUM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZVC-5m-4Ew">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8qd-dh-dH3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                    <animations/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXr-wE-ZGr">
+                    <rect key="frame" x="87.5" y="145" width="145" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Select from Library…">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectFromLibrary" destination="-1" eventType="touchUpInside" id="xV0-JH-IC7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8qd-dh-dH3" secondAttribute="bottom" id="0bl-d8-dfp"/>
+                <constraint firstAttribute="trailing" secondItem="8qd-dh-dH3" secondAttribute="trailing" id="7wo-m7-psl"/>
+                <constraint firstItem="8qd-dh-dH3" firstAttribute="leading" secondItem="ZVC-5m-4Ew" secondAttribute="leading" id="Sam-HG-jEL"/>
+                <constraint firstAttribute="centerY" secondItem="TXr-wE-ZGr" secondAttribute="centerY" id="fcQ-ji-g43"/>
+                <constraint firstItem="8qd-dh-dH3" firstAttribute="top" secondItem="ZVC-5m-4Ew" secondAttribute="top" id="mXR-T8-Wrt"/>
+                <constraint firstAttribute="centerX" secondItem="TXr-wE-ZGr" secondAttribute="centerX" id="yeq-qv-vqW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="189" y="172"/>
+        </view>
+    </objects>
+</document>
